@@ -2,36 +2,36 @@
 
 :root {
   --font-size: 16px;
-  --background: #FFF5F3;
-  --foreground: #2C1810;
+  --background: #fffaf7;
+  --foreground: #2d1b12;
   --card: #ffffff;
-  --card-foreground: #2C1810;
+  --card-foreground: #2d1b12;
   --popover: #ffffff;
-  --popover-foreground: #2C1810;
-  --primary: #FF6B6B;
+  --popover-foreground: #2d1b12;
+  --primary: #e76f51;
   --primary-foreground: #ffffff;
-  --secondary: #FFE5E0;
-  --secondary-foreground: #2C1810;
-  --muted: #FFD5CE;
-  --muted-foreground: #8B5A4A;
-  --accent: #FFA69E;
+  --secondary: #fff0eb;
+  --secondary-foreground: #2d1b12;
+  --muted: #f5d9d0;
+  --muted-foreground: #7f5345;
+  --accent: #f4b183;
   --accent-foreground: #ffffff;
   --destructive: #d4183d;
   --destructive-foreground: #ffffff;
-  --border: rgba(255, 107, 107, 0.2);
+  --border: rgba(231, 111, 81, 0.18);
   --input: transparent;
-  --input-background: #FFF5F3;
-  --switch-background: #FFB3AB;
-  --font-weight-medium: 500;
+  --input-background: #fffaf7;
+  --switch-background: #f7c4b6;
+  --font-weight-medium: 600;
   --font-weight-normal: 400;
-  --ring: #FF8080;
-  --chart-1: #FF6B6B;
-  --chart-2: #FFA69E;
-  --chart-3: #FFD5CE;
-  --chart-4: #FF8787;
-  --chart-5: #FFABAB;
-  --radius: 0.625rem;
-  --sidebar: #FFF5F3;
+  --ring: rgba(231, 111, 81, 0.45);
+  --chart-1: #e76f51;
+  --chart-2: #f4b183;
+  --chart-3: #f9d7c8;
+  --chart-4: #d96a6a;
+  --chart-5: #f7d7be;
+  --radius: 0.9rem;
+  --sidebar: #fffaf7;
   --sidebar-foreground: #2C1810;
   --sidebar-primary: #FF6B6B;
   --sidebar-primary-foreground: #ffffff;
@@ -126,6 +126,9 @@
 
   body {
     @apply bg-background text-foreground;
+    background-image:
+      radial-gradient(circle at top left, rgba(231, 111, 81, 0.08), transparent 28%),
+      radial-gradient(circle at bottom right, rgba(244, 177, 131, 0.1), transparent 30%);
   }
 }
 
@@ -186,6 +189,11 @@
 
 html {
   font-size: var(--font-size);
+  scroll-behavior: smooth;
+}
+
+body {
+  letter-spacing: -0.01em;
 }
 
 /* Acessibilidade */
