@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "build": "vite build",
+    "build": "tsc --noEmit && vite build",
     "dev": "vite"
   },
   "dependencies": {
@@ -18,7 +18,7 @@
     "@radix-ui/react-tooltip": "1.1.8",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
-    "date-fns": "4.1.0",
+    "date-fns": "^3.6.0",
     "embla-carousel-react": "8.6.0",
     "lucide-react": "0.487.0",
     "next-themes": "0.4.6",
@@ -36,11 +36,11 @@
     "@vitejs/plugin-react": "4.7.0",
     "tailwindcss": "4.1.12",
     "typescript": "^5.6.3",
-    "vite": "6.3.5"
+    "vite": "6.4.4"
   },
   "pnpm": {
     "overrides": {
-      "vite": "6.3.5"
+      "vite": "6.4.4"
     }
   }
 }
