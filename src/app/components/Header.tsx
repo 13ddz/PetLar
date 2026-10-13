@@ -54,10 +54,7 @@ export function Header({ onNavigate, activeSection, onCartOpen, onAuthOpen }: He
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-[#fffaf7]/85 backdrop-blur-xl supports-[backdrop-filter]:bg-[#fffaf7]/70 shadow-[0_8px_30px_rgba(231,111,81,0.06)]">
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <div className="flex items-center gap-3 cursor-pointer" onClick={() => onNavigate("home")}>
-          <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-[#f4b183] text-white shadow-lg shadow-primary/20">
-            <Heart className="h-5 w-5 fill-white" />
-          </div>
-          <span className="text-xl font-semibold tracking-tight text-foreground">PetLar</span>
+          <img src="/petlar-logo.png" alt="PetLar" className="h-25 w-auto" />
         </div>
         
         <nav className="hidden lg:flex items-center gap-2">
